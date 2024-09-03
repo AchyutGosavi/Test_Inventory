@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Asset Inventory Management</h1>
+    <form action="process_form.php" method="POST">
+        <label for="employee_name">Employee Name:</label>
+        <input type="text" id="employee_name" name="employee_name" required><br>
+
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id" required><br>
+
+        <label for="cpu_no">CPU No:</label>
+        <input type="text" id="cpu_no" name="cpu_no" required><br>
+
+        <label for="asset_tag">Asset Tag:</label>
+        <input type="text" id="asset_tag" name="asset_tag" required><br>
+
+        <label for="service_tag">Service Tag:</label>
+        <input type="text" id="service_tag" name="service_tag" required><br>
+
+        <label for="purchase_date">Purchase Date:</label>
+        <input type="date" id="purchase_date" name="purchase_date" required><br>
+
+        <label for="issued_status">Issued Status:</label>
+        <select id="issued_status" name="issued_status" required>
+            <option value="Issued">Issued</option>
+            <option value="Not Issued">Not Issued</option>
+        </select><br>
+
+        <label for="issued_date">Issued Date:</label>
+        <input type="date" id="issued_date" name="issued_date"><br>
+
+        <label for="verification_status">Verification Status:</label>
+        <select id="verification_status" name="verification_status" required>
+            <option value="Verified">Verified</option>
+            <option value="Not Verified">Not Verified</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
